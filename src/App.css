@@ -1,0 +1,91 @@
+html,body {
+  width: 100%;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: space-between;
+  background: black;
+  color: white;
+  padding: 1rem;
+  align-items: center;
+}
+
+.centermenu , .centermenu ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  margin: 0 1rem;
+}
+
+ul {
+  display: flex;
+}
+.ul>li:nth-child(1) {
+  margin: 0rem;
+}
+.centermenu ul > li {
+  margin: 0 1rem;
+  text-decoration: none;
+  list-style: none;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profilepic {
+  height: auto;
+  width: auto;
+  max-height: 24px;
+  margin: 0 1rem;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+
+.movielist {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+.poster {
+  width: auto;
+  height: auto;
+  max-height: 16rem;
+}
