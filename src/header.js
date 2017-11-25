@@ -57,6 +57,12 @@ class Header extends Component {
           </ul>
         </div>
         {this.state.user ?
+    <button onClick={this.logout}>Log Out</button>                
+    :
+    <button onClick={this.login}>Log In</button>              
+  }
+
+        {this.state.user ?
         <div className="profile">
           <div className='container'>
               <div>{this.state.user.displayName || this.state.user.email} </div>
@@ -67,7 +73,7 @@ class Header extends Component {
         </div>
           :
           <div className='wrapper'>
-            <p>You must be logged in to see the potluck list and submit to it.</p>
+            <p>You must be logged in to see your friend's feed</p>
           </div>
         }
 
