@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import fire, { auth, provider } from './fire';
 import Movie from './components/movie';
 import StarRatingComponent from 'react-star-rating-component';
-
+import Recommendations from './components/recommended'
 class Hero extends Component {
   constructor(props) {
     super(props);
@@ -21,7 +21,6 @@ class Hero extends Component {
     const { rating } = this.state;
     return (
       <div className="hero">
-
         <div className="title">Top Movies Around You</div>
 
         <div className="trending">

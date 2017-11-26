@@ -60,7 +60,7 @@ class Movie extends Component {
                         <StarRatingComponent 
                               name="rate1" 
                               starCount={5}
-                              value={movie.vote_average / 2}
+                              value={Math.round(movie.vote_average / 2)}
                               onStarClick={this.onStarClick.bind(this)}
                         />
                     </div>
