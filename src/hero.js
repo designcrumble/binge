@@ -29,33 +29,7 @@ class Hero extends Component {
         </div>
 
         <div className="topMovies">
-          <ul>
-            <li>
-              <div className="movielist">
-                <Movie />
-              </div>
-            </li>
-            <li>
-              <div className="movielist">
-                <Movie />
-              </div>
-            </li>
-            <li>
-              <div className="movielist">
-                <Movie />
-              </div>
-            </li>
-            <li>
-              <div className="movielist">
-                <Movie />
-              </div>
-            </li>
-            <li>
-              <div className="movielist">
-                <Movie />
-              </div>
-            </li>
-          </ul>
+            <Movie />
         </div>
 
       </div>

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import fire, { auth, provider } from '../fire';
-import StarRatingComponent from 'react-star-rating-component';
+
 
 let database = fire.database();
 
-class Movie extends Component {
+class Search extends Component {
   constructor(props) {
     super(props);
 
@@ -77,4 +77,4 @@ class Movie extends Component {
   }
 }
 
-export default Movie;
+export default Search;
