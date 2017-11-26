@@ -66,16 +66,6 @@ class App extends Component {
         <Header />
         <Hero />
         <Search />
-        <form onSubmit={this.addMessage.bind(this)}>
-          <input type="text" ref={ el => this.inputEl = el }/>
-          <input type="submit"/>
-          <ul>
-            { /* Render the list of messages */
-              this.state.messages.map( message => <li key={message.id}>{message.text}</li> )
-            }
-          </ul>
-        </form>
-
       </div>
     );
   }
