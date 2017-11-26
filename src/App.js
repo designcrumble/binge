@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import fire, { auth, provider } from './fire';
 import Header from './header';
 import Hero from './hero';
+import Search from './components/search'
 
 class App extends Component {
   constructor(props) {
@@ -64,7 +65,7 @@ class App extends Component {
       <div>
         <Header />
         <Hero />
-
+        <Search />
         <form onSubmit={this.addMessage.bind(this)}>
           <input type="text" ref={ el => this.inputEl = el }/>
           <input type="submit"/>
