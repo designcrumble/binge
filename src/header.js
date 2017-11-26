@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import fire, { auth, provider } from './fire';
+import Menu from './components/menu';
 
 class Header extends Component {
   constructor(props) {
@@ -43,11 +44,11 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="header">
+      <div className="header row">
 
-        <div className="logo">Binge</div>
+        <div className="logo col-md-4"><img className="logo-img" src="logo.png" alt=""/></div>
 
-        <div className="centermenu">
+        <div className="centermenu col-md-4">
           <ul>
             <li>Queue</li>
             <li>Popular</li>
@@ -56,26 +57,31 @@ class Header extends Component {
             <li>Category</li>
           </ul>
         </div>
-        {this.state.user ?
-    <button onClick={this.logout}>Log Out</button>                
-    :
-    <button onClick={this.login}>Log In</button>              
-  }
 
+        <div className="user-data col-md-4">
         {this.state.user ?
         <div className="profile">
-          <div className='container'>
+          <div className='something'>
               <div>{this.state.user.displayName || this.state.user.email} </div>
           </div>
           <div className='user-profile'>
              <img className='profilepic' src={this.state.user.photoURL} />
           </div>
+
         </div>
           :
           <div className='wrapper'>
-            <p>You must be logged in to see your friend's feed</p>
+            <p className="announcement">You must be logged in to see your friend's feed</p>
           </div>
         }
+
+        {this.state.user ?
+            <button className="logout" onClick={this.logout}>Log Out</button>                
+            :
+            <button className="logout" onClick={this.login}>Log In</button>              
+          }
+
+        </div>
 
       </div>
     );

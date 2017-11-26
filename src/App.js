@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import fire, { auth, provider } from './fire';
 import Header from './header';
 import Hero from './hero';
-import Search from './components/search'
+import Search from './components/search';
+import Video from './components/video';
+
 
 class App extends Component {
   constructor(props) {
@@ -62,10 +64,14 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div >
         <Header />
+        <Video />
+        <div className="container padding-2rem">
+
         <Hero />
         <Search />
+        </div>
       </div>
     );
   }

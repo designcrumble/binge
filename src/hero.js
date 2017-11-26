@@ -21,10 +21,14 @@ class Hero extends Component {
     const { rating } = this.state;
     return (
       <div className="hero">
-        <div className="title">Top Movies Around You</div>
+        <div className="title">Movies popular among your friends</div>
 
-        <div className="trending">
-
+        <div className="sidebar">
+          <img src="feed.png" alt=""/>
+          <img src="feed.png" alt=""/>
+          <img src="feed2.png" alt=""/>
+          <img src="feed.png" alt=""/>
+          <img src="feed2.png" alt=""/>
         </div>
 
         <div className="topMovies">

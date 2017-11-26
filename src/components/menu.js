@@ -1,10 +1,11 @@
-var React = require('react');
+import React, { Component } from 'react';
 var Dropdown = require('react-simple-dropdown');
 var DropdownTrigger = Dropdown.DropdownTrigger;
 var DropdownContent = Dropdown.DropdownContent;
  
-var Menu = React.createClass({
-    render: function () {
+
+class Menu extends Component{
+    render() {
         return (
             <Dropdown>
                 <DropdownTrigger>Profile</DropdownTrigger>
@@ -25,4 +26,4 @@ var Menu = React.createClass({
             </Dropdown>
         )
     }
-});
+}

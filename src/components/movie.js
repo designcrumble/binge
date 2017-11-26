@@ -50,13 +50,13 @@ class Movie extends Component {
             <ul className="topMovies">
               {this.state.movies.map((movie, i) => 
 
-                <div key={i}> 
-                  <div className="movielist col-xs-12 col-sm-12 col-md-3 cards">
+                <div key={i} className="col-md-3"> 
+                  <div className="movielist col-xs-12 cards">
                     <img src={'https://image.tmdb.org/t/p/w640/'+movie.backdrop_path} className="poster" alt={movie.title}/>
                     <div className="moviedetails"> 
                         <div className="movieTitle">{movie.title}</div>
                         <div>{movie.genre}</div>
-                        <div>{movie.vote_average / 2}</div>
+                        <p className="recommend">Recommended by Ali, Joakim and 2 other friends</p>
                         <StarRatingComponent 
                               name="rate1" 
                               starCount={5}
